@@ -1,11 +1,11 @@
-=Heading1=
-simple stuff now...
----
-*bold* tcl namespace id3 *bold*
-_italic_ commands in namespace: _italic_ 
-* proc open {p_fn}
-* proc close {}
-* proc set {tagid value}
-* proc get {tagid value}
-* proc flush {}
-* proc update {}
+=simple stuff now...=
+----
+*tcl namespace id3*
+  * proc close {} { return bool }
+  * proc flush {} { return bool }
+  * proc get {p_tagid} { return value }
+  * proc isset {p_tagid} { return value }
+  * proc open {p_fn} { return bool }
+  * proc set {p_tagid p_value} { return bool }
+  * proc strip {p_tagmask} { return bool }
+  * proc update {} { return bool }
