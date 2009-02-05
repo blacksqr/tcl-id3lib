@@ -1,0 +1,10 @@
+simple stuff now...
+
+tcl namespace id3
+commands in namespace:
+proc open {p_fn}
+proc close {}
+proc set {tagid value}
+proc get {tagid value}
+proc flush {}
+proc update {}
