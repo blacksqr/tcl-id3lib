@@ -1,0 +1,10 @@
+Installation guide for tcl-id3lib
+------------------------------------------------------------------------------
+
+1. get source from SVN
+-----------
+Checkout the SVN source code
+
+2. Building tcl-id3lib
+-----------------------
+use the vs2005 solution oder projectfiles in vs2005 dir
