@@ -1,0 +1,6 @@
+uses modified version of id3lib-3.8.3
+modifications made:
+	- added some explicit typecasts
+	- fixed vbr header read
+	- added support for additional TXXX frames
+	- added ability to search in TXXX frames for key names
