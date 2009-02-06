@@ -2,6 +2,7 @@
 ----
 *tcl namespace id3*
   * proc close {} { return bool }
+  * proc config {p_confid p_value} { return bool }
   * proc flush {} { return bool }
   * proc get {p_tagid} { return value }
   * proc isset {p_tagid} { return value }
