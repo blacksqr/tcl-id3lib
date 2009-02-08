@@ -5,8 +5,68 @@
   * proc config {p_confid p_value} { return bool }
   * proc flush {} { return bool }
   * proc get {p_tagid} { return value }
-  * proc isset {p_tagid} { return value }
+  * proc isset {p_tagid} { return bool }
   * proc open {p_fn} { return bool }
   * proc set {p_tagid p_value} { return bool }
-  * proc strip {p_tagmask} { return bool }
+  * proc strip {} { return bool }
   * proc update {} { return bool }
+
+_proc close_
+<br>
+closes file and deletes remaining id3tag.<br>
+returns success.
+<br>
+
+<br>
+_proc config_
+<br>
+sets configuration for strip and write commands.<br>
+  * deletemask { id3v1, id3v2, both }
+  * updatemask { id3v1, id3v2, both }
+returns success.
+<br>
+
+<br>
+_proc flush_
+<br>
+clears internal tag queue.<br>
+returns success.
+<br>
+
+<br>
+_proc get_
+<br>
+finds tag by tagid and returns text field content or "not found".
+<br>
+
+<br>
+_proc isset_
+<br>
+finds tag by tagid and returns success.
+<br>
+
+<br>
+_proc open_
+<br>
+loads mp3 file and links it with id3lib.<br>
+returns success.
+<br>
+
+<br>
+_proc set_
+<br>
+sets tag frame by tagid or if no valid id it sets a usertext frame with its name to the specified value.<br>
+returns success.
+<br>
+
+<br>
+_proc strip_
+<br>
+clears id3 frames specified by id3::config and returns success.
+<br>
+
+<br>
+_proc update_
+<br>
+updates id3 frames specified by id3::config from the tag queue and returns success.
+<br>
