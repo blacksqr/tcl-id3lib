@@ -4,3 +4,10 @@ modifications made:
 	- fixed vbr header read
 	- added support for additional TXXX frames
 	- added ability to search in TXXX frames for key names
+	
+unicode, utf-8, ISO-8859-1 ...
+A pitfall in tcl is the internal string encoding, its based on utf-8 format.
+Most mp3 players can't handle utf-8 so its up to the user of the tcl-id3lib
+module to do conversion from utf-8 to the desired encoding. Unicode is supported
+by most players. But ISO-8859-1 and other local charsets are supported by all.
+Tcl has various ways to handle with encoding itself so make use of them.
